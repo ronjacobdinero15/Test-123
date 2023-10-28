@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body,
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    /* HERO */
+    .hero {
+      height: 50vh;
+      background: url(miscellaneous/hero.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    /* MIX */
+    main,
+    .container {
+      background-color: white;
+      border: 5px solid black;
+      border-radius: 20px;
+    }
+    /* MAIN */
+    main {
+      position: absolute;
+      width: 50vw;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      padding: 25px 40px;
+      flex-direction: column;
+      z-index: 1;
+    }
+    main .title {
+      display: flex;
+    }
+    main .title .side-color {
+      background-color: hsl(0, 0%, 40%);
+      height: auto;
+      min-width: 0.7vw;
+    }
+    main .title .contents {
+      padding: 0 10px;
+    }
+    main .title .contents .bold {
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+    main .title .contents p:last-child {
+      font-size: 0.1rem;
+      color: rgb(86, 86, 86);
+      margin-bottom: 15px;
+    }
+    main .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    main .buttons button {
+      height: 40px;
+      width: 160px;
+      min-width: 100px;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      margin-top: 5px;
+    }
+    main .buttons button:first-child {
+      background-color: hsl(155, 97%, 55%);
+    }
+    main .buttons button:last-child {
+      color: white;
+      background-color: hsl(358, 77%, 58%);
+    }
+    /* SECTION */
+    section {
+      background-color: hsl(155, 97%, 55%);
+      height: 115vh;
+      position: relative;
+    }
+    section .container {
+      position: absolute;
+      height: 70vh;
+      width: 70vw;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      padding: 50px 100px;
+      bottom: 40px;
+    }
+    section .container .school-logos {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 30px;
+    }
+    section .container .school-logos img {
+      height: 30vh;
+    }
+    section .container .content {
+      padding: 0 30px;
+      text-align: justify;
+    }
+  </style>
+  <body>
+    <header class="hero"></header>
+    <main>
+      <div class="title">
+        <div class="side-color"></div>
+        <div class="contents">
+          <p class="bold">COMPLETE EDUCATION SOLUTION</p>
+          <p class="bold">BLENDED & TRADITIONAL LEARNING</p>
+          <p>IN AN INNOVATIVE E-LEARNING ENVIRONMENT</p>
+        </div>
+      </div>
+      <div class="buttons">
+        <button>ENROLL NOW</button><button>LOGIN</button>
+      </div>
+    </main>
+
+    <section>
+      <div class="container">
+        <div class="school-logos">
+          <img src="miscellaneous/up-logo.png" alt="UP logo" />
+          <img src="miscellaneous/deped-logo.png" alt="DepEd logo" />
+          <img src="miscellaneous/letran-logo.png" alt="Letran logo" />
+        </div>
+        <div class="content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam ratione
+          quam doloribus, magni corporis perferendis ullam ea quod nemo ipsam ad
+          autem eum nostrum asperiores fugiat nobis hic quia exercitationem
+          veritatis repellendus nisi odit facere quasi facilis! Possimus non a
+          magnam cumque qui porro officia expedita similique eligendi
+          voluptatibus! Facere!
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

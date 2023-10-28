@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      ul li {
+        display: inline-block;
+      }
+      .services,
+      .consulting {
+        position: relative;
+      }
+      .drop-down {
+        position: absolute;
+        display: none;
+      }
+      .services:hover .drop-down {
+        display: block;
+      }
+      .drop-down-two {
+        right: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Home</li>
+      <li class="services">
+        <a href="#">Services ▼</a>
+        <ul class="drop-down">
+          <li>Backend job</li>
+          <li>
+            Consulting ▼
+            <ul class="Consulting">
+              <li>test</li>
+              <li>test1</li>
+              <li>test2</li>
+            </ul>
+          </li>
+          <li>Others</li>
+        </ul>
+      </li>
+      <li>About</li>
+    </ul>
+  </body>
+</html>
